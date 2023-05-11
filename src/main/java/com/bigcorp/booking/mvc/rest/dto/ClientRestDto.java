@@ -1,6 +1,6 @@
 package com.bigcorp.booking.mvc.rest.dto;
 
-import tp_spring_jpa_pablo.model.Client;
+import com.bigcorp.booking.model.Client;
 
 public class ClientRestDto {
 	

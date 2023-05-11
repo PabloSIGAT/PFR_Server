@@ -1,19 +1,19 @@
 package com.bigcorp.booking.mvc.rest.dto;
 
-import tp_spring_jpa_pablo.model.Article;
-import tp_spring_jpa_pablo.model.Fournisseur;
+import com.bigcorp.booking.model.Article;
+import com.bigcorp.booking.model.EtatArticle;
 
 public class ArticleRestDto {
 	
 	private Integer id;
 	private String nom;
-	private String type;
+	private EtatArticle etatArticle;
 	private String description;		
 	
 	public ArticleRestDto(Article article) {
 		this.id = article.getId();		
 		this.nom = article.getNom();
-		this.type = article.getType();
+		this.etatArticle = article.getEtatArticle();
 		this.description = article.getDescription();		
 	}
 	
@@ -33,12 +33,12 @@ public class ArticleRestDto {
 		this.nom = nom;
 	}
 
-	public String getType() {
-		return type;
+	public EtatArticle getEtatArticle() {
+		return etatArticle;
 	}
 
-	public void setType(String type) {
-		this.type = type;
+	public void setEtatArticle(EtatArticle etatArticle) {
+		this.etatArticle = etatArticle;
 	}
 
 	public String getDescription() {
@@ -52,7 +52,7 @@ public class ArticleRestDto {
 	public Article remplisArticle(Article articleLu) {
 		articleLu.setId(this.id);		
 		articleLu.setNom(this.nom);
-		articleLu.setType(this.type);
+		articleLu.setEtatArticle(this.etatArticle);
 		articleLu.setDescription(this.description);		
 		return articleLu;
 	}

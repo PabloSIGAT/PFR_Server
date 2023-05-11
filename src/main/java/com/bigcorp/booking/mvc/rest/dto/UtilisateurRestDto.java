@@ -1,6 +1,6 @@
 package com.bigcorp.booking.mvc.rest.dto;
 
-import tp_spring_jpa_pablo.model.Utilisateur;
+import com.bigcorp.booking.model.Utilisateur;
 
 public class UtilisateurRestDto {
 	

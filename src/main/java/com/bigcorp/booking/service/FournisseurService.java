@@ -3,10 +3,8 @@ package com.bigcorp.booking.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import com.bigcorp.booking.dao.spring.FournisseurSpringDao;
-
-import tp_spring_jpa_pablo.model.Fournisseur;
+import com.bigcorp.booking.model.Fournisseur;
 
 @Service
 public class FournisseurService {

@@ -21,7 +21,7 @@ public class Utilisateur {
 	private String prenom;
 	private String email;
 	private String login;
-	private String mdp;
+	private String password;
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "CLIENT_ID")
@@ -75,12 +75,12 @@ public class Utilisateur {
 		this.login = login;
 	}
 
-	public String getMdp() {
-		return mdp;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setMdp(String mdp) {
-		this.mdp = mdp;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public Client getClient() {

@@ -4,14 +4,11 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.PersistenceUnit;
 import javax.persistence.Query;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import com.bigcorp.booking.dao.spring.UtilisateurSpringDao;
-
-import tp_spring_jpa_pablo.model.Utilisateur;
+import com.bigcorp.booking.model.Utilisateur;
 
 @Service
 public class UtilisateurService {

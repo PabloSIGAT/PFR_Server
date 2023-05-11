@@ -1,19 +1,17 @@
-package com.bigcorp.booking.dao;
+package service;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
-
+import com.bigcorp.booking.model.Article;
+import com.bigcorp.booking.model.Fournisseur;
 import com.bigcorp.booking.service.ArticleService;
 import com.bigcorp.booking.service.FournisseurService;
 import com.bigcorp.booking.spring.SpringConfiguration;
 
-import tp_spring_jpa_pablo.model.Article;
-import tp_spring_jpa_pablo.model.Fournisseur;
-
 @SpringJUnitConfig(SpringConfiguration.class)
-public class ArticleSpringDaoTest {
+public class ArticleServiceTest {
 
 	@Autowired
 	private ArticleService articleService;

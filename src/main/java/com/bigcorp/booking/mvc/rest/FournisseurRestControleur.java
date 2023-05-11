@@ -12,12 +12,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
-
+import com.bigcorp.booking.model.Fournisseur;
 import com.bigcorp.booking.mvc.rest.dto.FournisseurRestDto;
 import com.bigcorp.booking.service.ArticleService;
 import com.bigcorp.booking.service.FournisseurService;
-
-import tp_spring_jpa_pablo.model.Fournisseur;
 
 @RestController
 public class FournisseurRestControleur {   

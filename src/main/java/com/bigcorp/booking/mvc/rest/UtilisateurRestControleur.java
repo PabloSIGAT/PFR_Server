@@ -10,11 +10,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
-
+import com.bigcorp.booking.model.Utilisateur;
 import com.bigcorp.booking.mvc.rest.dto.UtilisateurRestDto;
 import com.bigcorp.booking.service.UtilisateurService;
-
-import tp_spring_jpa_pablo.model.Utilisateur;
 
 @RestController
 public class UtilisateurRestControleur {   
